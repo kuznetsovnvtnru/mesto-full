@@ -1,0 +1,13 @@
+.profile__avatar {
+    position: relative;
+    border-radius: 50%;
+}
+
+.profile__avatar:hover .profile__edit-avatar {
+    opacity: 1;
+}
+
+.profile__avatar:hover .profile__img-avatar {
+    opacity: 0.2;
+    transition: opacity 0.5s ease;
+}

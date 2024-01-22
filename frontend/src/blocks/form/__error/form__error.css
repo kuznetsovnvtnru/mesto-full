@@ -1,0 +1,11 @@
+.form__error {
+    position: absolute;
+    z-index: 3;
+    color: #FF0000;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 5px;
+
+}
