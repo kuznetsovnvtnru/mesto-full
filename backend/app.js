@@ -37,4 +37,4 @@ app.use('*', ((req, res) => {
   res.status(NOT_FOUND).send({ message: 'Запрашиваемый ресурс не найден' });
 }));
 app.use(errorHandler);
-app.listen(3001);
+app.listen(3000);
