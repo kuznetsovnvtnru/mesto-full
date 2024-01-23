@@ -48,7 +48,7 @@ module.exports.login = async (req, res, next) => {
       .orFail(new AccessError('Неправильные имя пользователя или пароль'));
     const matched = await bcrypt.compare(password, user.password);
     if (!matched) {
-      throw new AccessError('Неправильные имя пользователя или пароль');
+      throw new AccessError('Неверный пароль!');
     }
     const token = jwt.sign(
       { _id: user._id },
