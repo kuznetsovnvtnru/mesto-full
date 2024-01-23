@@ -23,7 +23,7 @@ const ValidateUpdateAvatar = celebrate({
 
 const ValidateCardId = celebrate({
   params: Joi.object().keys({
-    cardId: Joi.objectId(),
+    CardId: Joi.objectId(),
   }),
 });
 
